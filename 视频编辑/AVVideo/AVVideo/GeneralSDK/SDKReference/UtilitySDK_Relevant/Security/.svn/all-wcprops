@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 172
+/svn/unimob/!svn/ver/2847/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security
+END
+SecurityUtil.m
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/unimob/!svn/ver/2847/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/SecurityUtil.m
+END
+NSString+MD5.m
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/unimob/!svn/ver/335/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/NSString+MD5.m
+END
+NSData+AES.h
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/unimob/!svn/ver/335/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/NSData+AES.h
+END
+NSData+AES.m
+K 25
+svn:wc:ra_dav:version-url
+V 184
+/svn/unimob/!svn/ver/335/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/NSData+AES.m
+END
+SecurityUtil.h
+K 25
+svn:wc:ra_dav:version-url
+V 187
+/svn/unimob/!svn/ver/2847/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/SecurityUtil.h
+END
+NSString+MD5.h
+K 25
+svn:wc:ra_dav:version-url
+V 186
+/svn/unimob/!svn/ver/335/%E7%BD%91%E6%A0%A1/%E5%AE%A2%E6%88%B7%E7%AB%AF/IOS%E5%AE%A2%E6%88%B7%E7%AB%AF/%E5%AE%A2%E6%88%B7%E7%AB%AFV1.0/NetSchool_IOS/ThirdPart/SDK/Security/NSString+MD5.h
+END

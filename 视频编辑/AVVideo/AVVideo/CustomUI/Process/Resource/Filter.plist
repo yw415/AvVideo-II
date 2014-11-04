@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Filters</key>
+	<dict>
+		<key>明暗</key>
+		<string>CIVignette</string>
+		<key>旧化</key>
+		<string>CIPhotoEffectInstant</string>
+		<key>黑白</key>
+		<string>CIPhotoEffectNoir</string>
+		<key>深色</key>
+		<string>CISepiaTone</string>
+		<key>海报</key>
+		<string>CIColorPosterize</string>
+		<key>颜色翻转</key>
+		<string>CIColorInvert</string>
+	</dict>
+</dict>
+</plist>

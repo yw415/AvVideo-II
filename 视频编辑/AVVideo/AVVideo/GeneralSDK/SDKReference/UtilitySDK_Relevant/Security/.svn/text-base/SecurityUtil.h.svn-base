@@ -1,0 +1,53 @@
+//
+//  SecurityUtil.h
+//  Smile
+//
+//  Created by 周 敏 on 12-11-24.
+
+//
+
+#import <Foundation/Foundation.h>
+
+@interface SecurityUtil : NSObject 
+
+#pragma mark - base64
++ (NSString*)encodeBase64String:(NSString *)input;
++ (NSString*)decodeBase64String:(NSString *)input;
++ (NSString*)encodeBase64Data:(NSData *)data;
++ (NSString*)decodeBase64Data:(NSData *)data;
+
++ (NSString*)encodeWebSafeBase64Data:(NSData*)data;
++ (NSString*)decodeWebSafeBase64Data:(NSData*)data;
++ (NSString*)encodeWebSafeBase64String:(NSString*)input;
++ (NSString*)decodeWebSafeBase64String:(NSString*)input;
+
+#pragma mark - AES加密
+//将string转成带密码的data
++ (NSData*)encrypt256AESData:(NSString*)string;
+//将带密码的data转成string
++ (NSString*)decrypt256AESData:(NSData*)data;
+
+
+//+ (NSData*)encrypt128AESData:(NSString*)string;
+//
+//+ (NSString*)decrypt128AESData:(NSData*)data;
+
+
+#pragma mark - MD5加密
+/**
+ *	@brief	对string进行md5加密
+ *
+ *	@param 	string 	未加密的字符串
+ *
+ *	@return	md5加密后的字符串
+ */
++ (NSString*)encryptMD5String:(NSString*)string;
+
++ (NSString*) fileMD5Code: (NSString*)path;
+
++ (BOOL) containsChinese:(NSString *)str;
+
++ (NSInteger) containsChineseLength:(NSString *)str ;
+
++ (BOOL) validateEmail: (NSString *) candidate;
+@end

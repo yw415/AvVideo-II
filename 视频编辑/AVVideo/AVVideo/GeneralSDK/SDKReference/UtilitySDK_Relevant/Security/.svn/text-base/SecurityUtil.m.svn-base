@@ -1,0 +1,189 @@
+//
+//  SecurityUtil.h
+//  Smile
+//
+//  Created by 周 敏 on 12-11-24.
+
+//
+
+#import "SecurityUtil.h"
+#import "GTMBase64.h"
+#import "NSData+AES.h"
+#import "NSString+MD5.h"
+#import <CommonCrypto/CommonDigest.h>
+
+#define APP_PUBLIC_PASSWORD     @"boundary"
+
+@implementation SecurityUtil
+
++ (NSString*)fileMD5Code: (NSString*)path
+{
+    
+    NSFileHandle *handle = [NSFileHandle fileHandleForReadingAtPath:path];
+    if( handle== nil ) {
+        return nil;
+    }
+    CC_MD5_CTX md5;
+    CC_MD5_Init(&md5);
+    BOOL done = NO;
+    while(!done)
+    {
+        NSData* fileData = [handle readDataOfLength: 256 ];
+        CC_MD5_Update(&md5, [fileData bytes], [fileData length]);
+        if( [fileData length] == 0 ) done = YES;
+    }
+    unsigned char digest[CC_MD5_DIGEST_LENGTH];
+    CC_MD5_Final(digest, &md5);
+    NSString* s = [NSString stringWithFormat: @"%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x%02x",
+                   digest[0], digest[1],
+                   digest[2], digest[3],
+                   digest[4], digest[5],
+                   digest[6], digest[7],
+                   digest[8], digest[9],
+                   digest[10], digest[11],
+                   digest[12], digest[13],
+                   digest[14], digest[15]];
+    
+    return s;
+
+
+}
+
+#pragma mark - base64
++ (NSString*)encodeBase64String:(NSString * )input {
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 encodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]; 
+	return base64String;
+}
+
++ (NSString*)decodeBase64String:(NSString * )input { 
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES]; 
+    data = [GTMBase64 decodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease]; 
+	return base64String;
+} 
+
++ (NSString*)encodeBase64Data:(NSData *)data {
+	data = [GTMBase64 encodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
++ (NSString*)decodeBase64Data:(NSData *)data {
+	data = [GTMBase64 decodeData:data]; 
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
++ (NSString*)encodeWebSafeBase64Data:(NSData*)data
+{
+    data = [GTMBase64 webSafeEncodeData:data padded:YES];
+    NSString *webSafeBase64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return webSafeBase64String;
+    
+}
+
++ (NSString*)decodeWebSafeBase64Data:(NSData*)data
+{
+	data = [GTMBase64 webSafeDecodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
+
++ (NSString*)encodeWebSafeBase64String:(NSString*)input
+{
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 webSafeEncodeData:data padded:YES];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
++ (NSString*)decodeWebSafeBase64String:(NSString*)input
+{
+    NSData *data = [input dataUsingEncoding:NSUTF8StringEncoding allowLossyConversion:YES];
+    data = [GTMBase64 webSafeDecodeData:data];
+    NSString *base64String = [[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding] autorelease];
+	return base64String;
+}
+
+
+
+#pragma mark - AES加密
+//将string转成带密码的data
++(NSData*)encrypt256AESData:(NSString*)string {
+    //将nsstring转化为nsdata
+    NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
+    //使用密码对nsdata进行加密
+    NSData *encryptedData = [data AES256EncryptWithKey:APP_PUBLIC_PASSWORD];
+    return encryptedData;
+}
+
+//将带密码的data转成string
++(NSString*)decrypt256AESData:(NSData*)data {
+    //使用密码对data进行解密
+    NSData *decryData = [data AES256DecryptWithKey:APP_PUBLIC_PASSWORD];
+    //将解了密码的nsdata转化为nsstring
+    NSString *string = [[NSString alloc] initWithData:decryData encoding:NSUTF8StringEncoding];
+    return [string autorelease];
+}
+
+
+//+ (NSData*)encrypt128AESData:(NSString*)string
+//{
+//    NSData* data = [string dataUsingEncoding:NSUTF8StringEncoding];
+//    NSData* encrytedData = [data AES128DecryptWithKey:APP_PUBLIC_PASSWORD iv:string];
+//    return encrytedData;
+//}
+//
+//+ (NSString*)decrypt128AESData:(NSData*)data
+//{
+//
+//    return nil;
+//
+//}
+
+#pragma mark - MD5加密
+/**
+ *	@brief	对string进行md5加密
+ *
+ *	@param 	string 	未加密的字符串
+ *
+ *	@return	md5加密后的字符串
+ */
++ (NSString*)encryptMD5String:(NSString*)string {
+    return [string md5Encrypt];
+}
+
++ (BOOL) containsChinese:(NSString *)str {
+    for(int i = 0; i < [str length]; i++) {
+        int a = [str characterAtIndex:i];
+        if( a > 0x4e00 && a < 0x9fff)
+            return TRUE;
+    }
+    return FALSE;
+}
+
++ (NSInteger) containsChineseLength:(NSString *)str {
+	int length = 0;
+    for(int i = 0; i < [str length]; i++) {
+        int a = [str characterAtIndex:i];
+        if( a > 0x4e00 && a < 0x9fff)
+		{
+			length +=2;
+		}
+		else
+		{
+			length ++;
+		}
+    }
+    return length;
+}
+
++ (BOOL) validateEmail: (NSString *) candidate {
+    NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
+    NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
+    return [emailTest evaluateWithObject:candidate];
+}
+@end

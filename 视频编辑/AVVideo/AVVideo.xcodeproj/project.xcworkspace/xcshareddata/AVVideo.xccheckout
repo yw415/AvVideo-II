@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>A3625795-999F-421C-9700-97BF6F87A223</string>
+	<key>IDESourceControlProjectName</key>
+	<string>AVVideo</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>DC7EE285-915F-4E14-A3C1-58720404F93D</key>
+		<string>https://github.com/yw415/AvVideo.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>视频编辑/AVVideo/AVVideo.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>DC7EE285-915F-4E14-A3C1-58720404F93D</key>
+		<string>../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/yw415/AvVideo.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>DC7EE285-915F-4E14-A3C1-58720404F93D</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>DC7EE285-915F-4E14-A3C1-58720404F93D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>AvVideo</string>
+		</dict>
+	</array>
+</dict>
+</plist>

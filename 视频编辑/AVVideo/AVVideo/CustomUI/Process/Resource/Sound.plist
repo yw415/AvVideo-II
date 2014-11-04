@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Sound</key>
+	<array>
+		<string>You&amp;Me</string>
+		<string>Watch Out</string>
+		<string>Waltz All Night</string>
+		<string>Toot</string>
+		<string>The Soul Of Bruce</string>
+		<string>Take Me Home</string>
+		<string>Steel Stilleto</string>
+		<string>Oh My Juliet</string>
+		<string>Navigator</string>
+		<string>Lost In Manhattan</string>
+		<string>Lights Out</string>
+		<string>Let Me Know</string>
+		<string>Lemon Sunrise</string>
+		<string>Le Lever De Soleil</string>
+		<string>Lady Of The Lake</string>
+		<string>KT Mix</string>
+		<string>Jazz Club</string>
+		<string>It&apos;s A Good Day</string>
+		<string>I Do</string>
+		<string>Hubble PoPo</string>
+		<string>Go To The Beach</string>
+		<string>Get Ready 2 Play</string>
+		<string>Flapper Fashion</string>
+		<string>Firefly Waltz</string>
+		<string>Dust On My Boots</string>
+		<string>Dolphin Tango</string>
+		<string>Come With Me</string>
+		<string>Climbing Ladders</string>
+		<string>Christmas Song</string>
+		<string>Bye Bye Sunday</string>
+		<string>Burn It Up</string>
+		<string>Bright Young Things</string>
+		<string>Black Jingle</string>
+		<string>Barcelona</string>
+		<string>All Things Holiday</string>
+		<string>A New Path</string>
+		<string>A Little Kiss</string>
+	</array>
+</dict>
+</plist>

@@ -1,0 +1,78 @@
+//
+//  Prefix header
+//
+//  The contents of this file are implicitly included at the beginning of every source file.
+//
+
+#import <Availability.h>
+#import <SystemConfiguration/SystemConfiguration.h>
+#import <MobileCoreServices/MobileCoreServices.h>
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#endif
+
+// 视频记录文件夹
+#define VideoRecordPath @"VideoClips"
+// 视频记录文件名
+#define VideoRecordFile @"video.mp4"
+// 混合文件夹
+#define MixVideoPath @"MixVideo"
+// 混合文件名
+#define MixVideoFile @"mixVideo.mp4"
+// 滤镜临时文件夹
+#define FilterTempVideoPath @"VideoTempFilter"
+// 滤镜临时文件名
+#define FilterTempVideoFile @"videoTempFilter.mp4"
+// 声音临时文件夹
+#define SoundTempVideoPath @"SoundempFilter"
+// 声音临时文件名
+#define SoundTempVideoFile @"soundempFilte.mp4r"
+
+/// 视频最大记录时间
+#define MaxTime 13.0
+/// 累加时间
+#define CoundTime 0.01
+/// 允许记录时间
+#define RequireTime 4.0
+
+//返回服务器地址
+#define HostUrl [[BusinessURL Instance] getURLWithRequest:URL_Host]
+//下载包地址名
+#define DownLoadPath @"OffLineZipList"
+//解压包地址名
+#define UnzipPath @"OfflineFileList"
+//数据库地址名
+#define DataBasePah @"DataBase"
+//缓存归档文件夹
+#define CacheDirectory @"CacheData"
+//推送相关枚举值
+typedef enum {
+    MarqueeBegin    = 0,
+    MarqueeStop     = 1,
+} PushNotificationCode;
+
+//判断当前系统版本是否ios7
+#define IOS7_OR_LATER	( [[[UIDevice currentDevice] systemVersion] compare:@"7.0"] != NSOrderedAscending )
+//判断当前系统版本是否io5或之前版本
+#define IOS5_OR_BEFORE	( [[[UIDevice currentDevice] systemVersion] compare:@"5.0"] == NSOrderedAscending ||  [[[UIDevice currentDevice] systemVersion] compare:@"5.0"] == NSOrderedSame)
+//判断是否为iphone5
+#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//获得当前屏幕宽
+#define ScreenWidth [[UIScreen mainScreen] bounds].size.width
+//获得当前屏幕高
+#define ScreenHeight [[UIScreen mainScreen] bounds].size.height
+//获取版本号
+#define c_version   @"netschool_1.2.0_99999943_ios"
+//获取版本号v
+#define version_v   @"V1.2.0"
+//获取渠道号
+#define channel  	@"99999943"
+//转换色值为uicolor
+#define UICOLOR_RGB_Alpha(_color,_alpha) [UIColor colorWithRed:((_color>>16)&0xff)/255.0f green:((_color>>8)&0xff)/255.0f blue:(_color&0xff)/255.0f alpha:_alpha]
+//变量名转字符串
+#define name_to_str(name_31415926)  (#name_31415926)

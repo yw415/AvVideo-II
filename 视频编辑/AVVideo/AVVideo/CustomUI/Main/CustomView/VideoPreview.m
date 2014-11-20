@@ -451,7 +451,7 @@
     fileList=[[UtilitySDK Instance]getFilesInDirectory:mixFilePath];
     
     for (NSString * videoFile in fileList) {
-        NSString * filePath=[outputVideoFilePath stringByAppendingPathComponent:videoFile];
+        NSString * filePath=[mixFilePath stringByAppendingPathComponent:videoFile];
         [[UtilitySDK Instance]deleteFile:filePath];
     }
 }

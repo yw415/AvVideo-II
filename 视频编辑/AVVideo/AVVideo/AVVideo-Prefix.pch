@@ -25,13 +25,19 @@
 // 混合文件名
 #define MixVideoFile @"mixVideo.mp4"
 // 滤镜临时文件夹
-#define FilterTempVideoPath @"VideoTempFilter"
+#define FilterTempVideoPath @"FilterTemp"
 // 滤镜临时文件名
-#define FilterTempVideoFile @"videoTempFilter.mp4"
+#define FilterTempVideoFile @"filterTemp.mp4"
+// 滤镜修改方向临时文件名
+#define FilterTempVideoFileA @"filterTemp-A.mp4"
 // 声音临时文件夹
-#define SoundTempVideoPath @"SoundempFilter"
+#define SoundTempVideoPath @"SoundTemp"
 // 声音临时文件名
-#define SoundTempVideoFile @"soundempFilte.mp4r"
+#define SoundTempVideoFile @"soundTemp.mp4"
+// 水印临时文件夹
+#define WaterPrintTempVideoPath @"WaterPrintTemp"
+// 水印临时文件名
+#define WaterPrintTempVideoFile @"waterPrintTemp.mp4"
 
 /// 视频最大记录时间
 #define MaxTime 13.0

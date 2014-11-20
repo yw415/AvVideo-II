@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A3625795-999F-421C-9700-97BF6F87A223</string>
+	<string>21A9A1B5-CBBF-4537-8A8C-B9F92FDB9171</string>
 	<key>IDESourceControlProjectName</key>
 	<string>AVVideo</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>DC7EE285-915F-4E14-A3C1-58720404F93D</key>
-		<string>https://github.com/yw415/AvVideo.git</string>
+		<key>A27D8F0B-6842-4700-9F50-9E20819BD108</key>
+		<string>https://github.com/yw415/AvVideo-II.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>视频编辑/AVVideo/AVVideo.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>DC7EE285-915F-4E14-A3C1-58720404F93D</key>
+		<key>A27D8F0B-6842-4700-9F50-9E20819BD108</key>
 		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/yw415/AvVideo.git</string>
+	<string>https://github.com/yw415/AvVideo-II.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>DC7EE285-915F-4E14-A3C1-58720404F93D</string>
+	<string>A27D8F0B-6842-4700-9F50-9E20819BD108</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>DC7EE285-915F-4E14-A3C1-58720404F93D</string>
+			<string>A27D8F0B-6842-4700-9F50-9E20819BD108</string>
 			<key>IDESourceControlWCCName</key>
-			<string>AvVideo</string>
+			<string>AvVideo-II</string>
 		</dict>
 	</array>
 </dict>

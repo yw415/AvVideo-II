@@ -90,6 +90,7 @@
 		CE94279419F4E059004A16E2 /* VideoProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = CE94279319F4E059004A16E2 /* VideoProcess.m */; };
 		CE95B37019F9EBB00007D048 /* Sound.plist in Resources */ = {isa = PBXBuildFile; fileRef = CE95B36F19F9EBB00007D048 /* Sound.plist */; };
 		CE96B5BB1A05ECB900F139E2 /* ImageProcess.m in Sources */ = {isa = PBXBuildFile; fileRef = CE96B5BA1A05ECB900F139E2 /* ImageProcess.m */; };
+		CE9986671A0EFFC100784E98 /* star.png in Resources */ = {isa = PBXBuildFile; fileRef = CE9986661A0EFFC100784E98 /* star.png */; };
 		CE9AFBDE19DA60C500CCA3B9 /* VideoProcessItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AFBD419DA60C500CCA3B9 /* VideoProcessItem.m */; };
 		CE9AFBDF19DA60C500CCA3B9 /* VideoProcessOperationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AFBD619DA60C500CCA3B9 /* VideoProcessOperationItem.m */; };
 		CE9AFBE019DA60C500CCA3B9 /* VideoProcessOperationView.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AFBD819DA60C500CCA3B9 /* VideoProcessOperationView.m */; };
@@ -100,6 +101,15 @@
 		CE9AFBE919DAA0D600CCA3B9 /* CustomHorizontalTable.m in Sources */ = {isa = PBXBuildFile; fileRef = CE9AFBE819DAA0D600CCA3B9 /* CustomHorizontalTable.m */; };
 		CEA06CE219E7BEAC00CF1EAF /* VideoPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = CEA06CE119E7BEAC00CF1EAF /* VideoPlayer.m */; };
 		CEA26D7119F60996008E857D /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEA26D7019F60996008E857D /* AVFoundation.framework */; };
+		CEA6CBF71A1C9F3300FDD93B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBF41A1C9F3300FDD93B /* Default-568h@2x.png */; };
+		CEA6CBF81A1C9F3300FDD93B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBF51A1C9F3300FDD93B /* Default.png */; };
+		CEA6CBF91A1C9F3300FDD93B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBF61A1C9F3300FDD93B /* Default@2x.png */; };
+		CEA6CC001A1CA2C700FDD93B /* Icon-29.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFA1A1CA2C700FDD93B /* Icon-29.png */; };
+		CEA6CC011A1CA2C700FDD93B /* Icon-50.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFB1A1CA2C700FDD93B /* Icon-50.png */; };
+		CEA6CC021A1CA2C700FDD93B /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFC1A1CA2C700FDD93B /* Icon-72.png */; };
+		CEA6CC031A1CA2C700FDD93B /* Icon-Small.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFD1A1CA2C700FDD93B /* Icon-Small.png */; };
+		CEA6CC041A1CA2C700FDD93B /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFE1A1CA2C700FDD93B /* Icon.png */; };
+		CEA6CC051A1CA2C700FDD93B /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CEA6CBFF1A1CA2C700FDD93B /* Icon@2x.png */; };
 		CECCD4081991160800F2289F /* General_ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCD4041991160800F2289F /* General_ViewController.m */; };
 		CECCD4BC199116D500F2289F /* ConfigSDK.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCD40C199116D500F2289F /* ConfigSDK.m */; };
 		CECCD4BD199116D500F2289F /* BlockAlertView.m in Sources */ = {isa = PBXBuildFile; fileRef = CECCD410199116D500F2289F /* BlockAlertView.m */; };
@@ -283,6 +293,7 @@
 		CE95B36F19F9EBB00007D048 /* Sound.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Sound.plist; sourceTree = "<group>"; };
 		CE96B5B91A05ECB900F139E2 /* ImageProcess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageProcess.h; sourceTree = "<group>"; };
 		CE96B5BA1A05ECB900F139E2 /* ImageProcess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageProcess.m; sourceTree = "<group>"; };
+		CE9986661A0EFFC100784E98 /* star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = star.png; sourceTree = "<group>"; };
 		CE9AFBD319DA60C500CCA3B9 /* VideoProcessItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoProcessItem.h; sourceTree = "<group>"; };
 		CE9AFBD419DA60C500CCA3B9 /* VideoProcessItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoProcessItem.m; sourceTree = "<group>"; };
 		CE9AFBD519DA60C500CCA3B9 /* VideoProcessOperationItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoProcessOperationItem.h; sourceTree = "<group>"; };
@@ -300,6 +311,15 @@
 		CEA06CE019E7BEAC00CF1EAF /* VideoPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoPlayer.h; sourceTree = "<group>"; };
 		CEA06CE119E7BEAC00CF1EAF /* VideoPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoPlayer.m; sourceTree = "<group>"; };
 		CEA26D7019F60996008E857D /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CEA6CBF41A1C9F3300FDD93B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CEA6CBF51A1C9F3300FDD93B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CEA6CBF61A1C9F3300FDD93B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CEA6CBFA1A1CA2C700FDD93B /* Icon-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-29.png"; sourceTree = "<group>"; };
+		CEA6CBFB1A1CA2C700FDD93B /* Icon-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-50.png"; sourceTree = "<group>"; };
+		CEA6CBFC1A1CA2C700FDD93B /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		CEA6CBFD1A1CA2C700FDD93B /* Icon-Small.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-Small.png"; sourceTree = "<group>"; };
+		CEA6CBFE1A1CA2C700FDD93B /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		CEA6CBFF1A1CA2C700FDD93B /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		CECCD4031991160800F2289F /* General_ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = General_ViewController.h; sourceTree = "<group>"; };
 		CECCD4041991160800F2289F /* General_ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = General_ViewController.m; sourceTree = "<group>"; };
 		CECCD40B199116D500F2289F /* ConfigSDK.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfigSDK.h; sourceTree = "<group>"; };
@@ -524,6 +544,7 @@
 		CE14C5B819D7DE2B001565D5 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				CE9986661A0EFFC100784E98 /* star.png */,
 				CE14C5B919D7DE2B001565D5 /* General_ConcelBut.png */,
 				CE14C5BA19D7DE2B001565D5 /* General_ConcelBut@2x.png */,
 				CE14C5BB19D7DE2B001565D5 /* General_ConcelBut_.png */,
@@ -585,6 +606,15 @@
 		CE84131B1990FBC00053D5F3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				CEA6CBFA1A1CA2C700FDD93B /* Icon-29.png */,
+				CEA6CBFE1A1CA2C700FDD93B /* Icon.png */,
+				CEA6CBFB1A1CA2C700FDD93B /* Icon-50.png */,
+				CEA6CBFC1A1CA2C700FDD93B /* Icon-72.png */,
+				CEA6CBFD1A1CA2C700FDD93B /* Icon-Small.png */,
+				CEA6CBFF1A1CA2C700FDD93B /* Icon@2x.png */,
+				CEA6CBF41A1C9F3300FDD93B /* Default-568h@2x.png */,
+				CEA6CBF51A1C9F3300FDD93B /* Default.png */,
+				CEA6CBF61A1C9F3300FDD93B /* Default@2x.png */,
 				CE84131C1990FBC00053D5F3 /* AVVideo-Info.plist */,
 				CE84131D1990FBC00053D5F3 /* InfoPlist.strings */,
 				CE8413201990FBC00053D5F3 /* main.m */,
@@ -1105,6 +1135,11 @@
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = ios;
+				TargetAttributes = {
+					CE8413101990FBC00053D5F3 = {
+						DevelopmentTeam = Z45ES22DEC;
+					};
+				};
 			};
 			buildConfigurationList = CE84130C1990FBC00053D5F3 /* Build configuration list for PBXProject "AVVideo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1129,10 +1164,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				CE94276619F4DDD6004A16E2 /* A Little Kiss.mp3 in Resources */,
+				CEA6CC051A1CA2C700FDD93B /* Icon@2x.png in Resources */,
 				CE14C5A219D7D72A001565D5 /* MainView_SaveBut_.png in Resources */,
 				CE14C59B19D7D72A001565D5 /* MainView_LightBut_@2x.png in Resources */,
 				CE94277819F4DDD6004A16E2 /* I Do.mp3 in Resources */,
 				CE94277519F4DDD6004A16E2 /* Get Ready 2 Play.mp3 in Resources */,
+				CEA6CC021A1CA2C700FDD93B /* Icon-72.png in Resources */,
 				CE94276F19F4DDD6004A16E2 /* Climbing Ladders.mp3 in Resources */,
 				CE14C59719D7D72A001565D5 /* Mainview_DelayAccessory_@2x.png in Resources */,
 				CE94278719F4DDD6004A16E2 /* Toot.mp3 in Resources */,
@@ -1147,9 +1184,11 @@
 				CE9AFBE219DA60C500CCA3B9 /* VideoProcessView_Sound@2x.png in Resources */,
 				CE94276719F4DDD6004A16E2 /* A New Path.mp3 in Resources */,
 				CE94276C19F4DDD6004A16E2 /* Burn It Up.mp3 in Resources */,
+				CEA6CBF81A1C9F3300FDD93B /* Default.png in Resources */,
 				CE94277619F4DDD6004A16E2 /* Go To The Beach.mp3 in Resources */,
 				CE14C5A519D7D72A001565D5 /* MainView_Switch@2x.png in Resources */,
 				CE94278919F4DDD6004A16E2 /* Watch Out.mp3 in Resources */,
+				CEA6CC001A1CA2C700FDD93B /* Icon-29.png in Resources */,
 				CE94278119F4DDD6004A16E2 /* Lost In Manhattan.mp3 in Resources */,
 				CECCD4C0199116D500F2289F /* operationtips2.png in Resources */,
 				CE9383C31A072118002C3911 /* Filter.plist in Resources */,
@@ -1157,12 +1196,14 @@
 				CE84131F1990FBC00053D5F3 /* InfoPlist.strings in Resources */,
 				CECCD4C2199116D500F2289F /* operationtips4.png in Resources */,
 				CECCD5DD1991176400F2289F /* 37x-Checkmark.png in Resources */,
+				CEA6CC011A1CA2C700FDD93B /* Icon-50.png in Resources */,
 				CE14C59519D7D72A001565D5 /* Mainview_DelayAccessory@2x.png in Resources */,
 				CE94278319F4DDD6004A16E2 /* Oh My Juliet.mp3 in Resources */,
 				CE14C59F19D7D72A001565D5 /* MainView_RecordBut_@2x.png in Resources */,
 				CE94277A19F4DDD6004A16E2 /* Jazz Club.mp3 in Resources */,
 				CE14C5A119D7D72A001565D5 /* MainView_SaveBut@2x.png in Resources */,
 				CE94276B19F4DDD6004A16E2 /* Bright Young Things.mp3 in Resources */,
+				CE9986671A0EFFC100784E98 /* star.png in Resources */,
 				CE941D8019F8DF1B009922CB /* video.mp4 in Resources */,
 				CE94278A19F4DDD6004A16E2 /* You&Me.mp3 in Resources */,
 				CE14C59619D7D72A001565D5 /* Mainview_DelayAccessory_.png in Resources */,
@@ -1183,10 +1224,13 @@
 				CE94278419F4DDD6004A16E2 /* Steel Stilleto.mp3 in Resources */,
 				CE94277019F4DDD6004A16E2 /* Come With Me.mp3 in Resources */,
 				CECCD4BF199116D500F2289F /* operationtips1.png in Resources */,
+				CEA6CBF91A1C9F3300FDD93B /* Default@2x.png in Resources */,
+				CEA6CBF71A1C9F3300FDD93B /* Default-568h@2x.png in Resources */,
 				CE14C5A019D7D72A001565D5 /* MainView_SaveBut.png in Resources */,
 				CE14C5A619D7D72A001565D5 /* MainView_Switch_.png in Resources */,
 				CE9AFBE119DA60C500CCA3B9 /* VideoProcessView_Sound.png in Resources */,
 				CE14C59419D7D72A001565D5 /* Mainview_DelayAccessory.png in Resources */,
+				CEA6CC041A1CA2C700FDD93B /* Icon.png in Resources */,
 				CE94278519F4DDD6004A16E2 /* Take Me Home.mp3 in Resources */,
 				CE14C59A19D7D72A001565D5 /* MainView_LightBut_.png in Resources */,
 				CE94278819F4DDD6004A16E2 /* Waltz All Night.mp3 in Resources */,
@@ -1199,6 +1243,7 @@
 				CE14C5BE19D7DE2B001565D5 /* General_ConcelBut@2x.png in Resources */,
 				CE14C59C19D7D72A001565D5 /* MainView_RecordBut.png in Resources */,
 				CE94277B19F4DDD6004A16E2 /* KT Mix.mp3 in Resources */,
+				CEA6CC031A1CA2C700FDD93B /* Icon-Small.png in Resources */,
 				CE14C5A319D7D72A001565D5 /* MainView_SaveBut_@2x.png in Resources */,
 				CECCD5E01991176400F2289F /* Icon-Small@2x.png in Resources */,
 				CE14C59D19D7D72A001565D5 /* MainView_RecordBut@2x.png in Resources */,
@@ -1339,7 +1384,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LI YU (Z45ES22DEC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LI YU (Z45ES22DEC)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -1357,6 +1403,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "2fcd916a-6252-4552-ac5f-bac2575e3d7e";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1377,7 +1424,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LI YU (Z45ES22DEC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LI YU (Z45ES22DEC)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -1388,6 +1436,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PROVISIONING_PROFILE = "2fcd916a-6252-4552-ac5f-bac2575e3d7e";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1396,12 +1445,14 @@
 		CE84133E1990FBC00053D5F3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LI YU (Z45ES22DEC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LI YU (Z45ES22DEC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVVideo/AVVideo-Prefix.pch";
 				INFOPLIST_FILE = "AVVideo/AVVideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = AVVideo;
+				PROVISIONING_PROFILE = "2fcd916a-6252-4552-ac5f-bac2575e3d7e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1409,12 +1460,14 @@
 		CE84133F1990FBC00053D5F3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LI YU (Z45ES22DEC)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: LI YU (Z45ES22DEC)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "AVVideo/AVVideo-Prefix.pch";
 				INFOPLIST_FILE = "AVVideo/AVVideo-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
 				PRODUCT_NAME = AVVideo;
+				PROVISIONING_PROFILE = "2fcd916a-6252-4552-ac5f-bac2575e3d7e";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

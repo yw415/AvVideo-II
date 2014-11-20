@@ -206,7 +206,9 @@
             // 设置文件路径
             NSString * soundPath=[[NSBundle mainBundle]pathForResource:soundFile ofType:@"mp3"];
             NSString * sourceVideoPath=[[UtilitySDK Instance]creatDirectiory:MixVideoPath];
-            sourceVideoPath=[sourceVideoPath stringByAppendingPathComponent:MixVideoFile];
+            NSArray * files=[[UtilitySDK Instance]getFilesInDirectory:sourceVideoPath];
+            NSString * file=[files objectAtIndex:0];
+            sourceVideoPath=[sourceVideoPath stringByAppendingPathComponent:file];
             
             //混合
             [[VideoProcess Instance] mixSound:soundPath
@@ -235,8 +237,10 @@
             NSLog(@"滤镜名:%@",filterName);
             // 设置文件路径
             NSString * sourceVideoPath=[[UtilitySDK Instance]creatDirectiory:MixVideoPath];
-            sourceVideoPath=[sourceVideoPath stringByAppendingPathComponent:MixVideoFile];
-                      
+            NSArray * files=[[UtilitySDK Instance]getFilesInDirectory:sourceVideoPath];
+            NSString * file=[files objectAtIndex:0];
+            sourceVideoPath=[sourceVideoPath stringByAppendingPathComponent:file];
+            
             dispatch_queue_t filterQueue=dispatch_queue_create("filterQueue", NULL);
             dispatch_async(filterQueue, ^{
                 [[VideoProcess Instance]extractImageFromVideo:sourceVideoPath
@@ -259,7 +263,59 @@
         case 2:
         {
             NSLog(@"当前选择为水印");
+            UIImage * img=[[UISDK Instance]getImg:@"star.png"];
+            CGRect rect=CGRectZero;
+            switch (selectedIndex) {
+                case 0:
+                {
+                    rect=CGRectMake(100, 300, 100, 100);
+                }
+                    break;
+                case 1:
+                {
+                    rect=CGRectMake(300, 300, 100, 100);
+                }
+                    break;
+                case 2:
+                {
+                    rect=CGRectMake(100, 100, 100, 100);
+                }
+                    break;
+                case 3:
+                {
+                    rect=CGRectMake(100, 400, 100, 100);
+                }
+                    break;
+                case 4:
+                {
+                    rect=CGRectMake(150, 150, 100, 100);
+                }
+                    break;
+                default:
+                    break;
+            }
+            // 设置文件路径
+            NSString * sourceVideoPath=[[UtilitySDK Instance]creatDirectiory:MixVideoPath];
+            NSArray * files=[[UtilitySDK Instance]getFilesInDirectory:sourceVideoPath];
+            NSString * file=[files objectAtIndex:0];
+            sourceVideoPath=[sourceVideoPath stringByAppendingPathComponent:file];
             
+            [[VideoProcess Instance]addWaterPrintToVideo:sourceVideoPath
+                                               printImg:img
+                                              printRect:rect
+                              finishWataerPrintCallBack:^(NSString * path) {
+                                  
+                                  if(self.selectedBlock)
+                                  {
+                                      
+                                      self.selectedBlock(path);
+                                  }
+                                  
+                                  dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(0.5 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+                                      [[UISDK Instance]hideWait:self.window];
+                                  });
+                              }
+             ];
         }
             break;
         default:

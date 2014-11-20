@@ -120,10 +120,16 @@
     sourceFilePath=[sourceFilePath  stringByAppendingPathComponent:VideoRecordFile];
     // 获取混合文件
     NSString * mixFilePath=[[UtilitySDK Instance]creatDirectiory:MixVideoPath];
-    mixFilePath=[mixFilePath stringByAppendingPathComponent:MixVideoFile];
+    NSArray * files=[[UtilitySDK Instance]getFilesInDirectory:mixFilePath];
+    for(NSString * file in files)
+    {
+        NSString * filePath=[mixFilePath stringByAppendingPathComponent:file];
+        [[UtilitySDK Instance]deleteFile:filePath];
+    }
     // 删除已存在的混合文件
-    [[UtilitySDK Instance]deleteFile:mixFilePath];
+    
     // 将原文件拷贝到混合文件中
+    mixFilePath=[mixFilePath stringByAppendingPathComponent:MixVideoFile];
     [[UtilitySDK Instance]saveFile:sourceFilePath toSavePath:mixFilePath];
     
     [self.videoPlayer changePlayerItem:mixFilePath];
@@ -135,7 +141,11 @@
 {
     [[UISDK Instance]showWait:@"请稍候" view:self.view.window];
     NSString * filePath=[[UtilitySDK Instance]creatDirectiory:MixVideoPath];
-    filePath = [filePath stringByAppendingPathComponent:MixVideoFile];
+    NSArray * files=[[UtilitySDK Instance]getFilesInDirectory:filePath];
+    for(NSString * file in files)
+    {
+        filePath = [filePath stringByAppendingPathComponent:file];
+    }
     [PhotosAlbumOption Instance].saveFinishBlock=^{
         [[UISDK Instance]hideWait:self.view.window];
         [[UISDK Instance]showTextHud:@"视频已输出到相册" view:self.view.window];

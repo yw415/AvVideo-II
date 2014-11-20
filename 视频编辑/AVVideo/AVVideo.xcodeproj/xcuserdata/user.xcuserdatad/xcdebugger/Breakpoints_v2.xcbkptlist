@@ -477,7 +477,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "191"
             endingLineNumber = "191"
-            landmarkName = "-mixVideo:videoPath:soundPath:savePath:finishBlock:"
+            landmarkName = "-extractImageFromVideo:filterName:finishFilterCallBack:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -603,8 +603,8 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "308"
             endingLineNumber = "308"
-            landmarkName = "-extractImageFromVideo:filterName:finishFilterCallBack:"
-            landmarkType = "5">
+            landmarkName = "@implementation VideoProcess"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -619,7 +619,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "430"
             endingLineNumber = "430"
-            landmarkName = "-pixelBufferFromCGImage:frameSize:"
+            landmarkName = "-addWaterPrintToVideo:printImg:printRect:finishWataerPrintCallBack:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -635,7 +635,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "330"
             endingLineNumber = "330"
-            landmarkName = "-extractImageFromVideo:filterName:finishFilterCallBack:"
+            landmarkName = "-pixelBufferFromCGImage:frameSize:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -685,12 +685,42 @@
             endingLineNumber = "245"
             landmarkName = "-selectedItem:index:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[VideoProcessOperationView selectedItem:index:]"
+                  moduleName = "AVVideo"
+                  urlString = "file:///Users/user/AvVideo-II/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/AVVideo/AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
+                  timestampString = "437190609.366519"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "1754">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__48-[VideoProcessOperationView selectedItem:index:]_block_invoke141"
+                  moduleName = "AVVideo"
+                  urlString = "file:///Users/user/AvVideo-II/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/AVVideo/AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
+                  timestampString = "437190609.366944"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "245"
+                  endingLineNumber = "245"
+                  offsetFromSymbolStart = "44">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
@@ -716,6 +746,38 @@
             startingLineNumber = "211"
             endingLineNumber = "211"
             landmarkName = "-hideOperationView:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
+            timestampString = "437189956.176546"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "197"
+            endingLineNumber = "197"
+            landmarkName = "-selectedItem:index:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
+            timestampString = "437190500.967048"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "264"
+            endingLineNumber = "264"
+            landmarkName = "-selectedItem:index:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

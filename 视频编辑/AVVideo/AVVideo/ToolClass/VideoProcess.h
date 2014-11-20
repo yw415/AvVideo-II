@@ -23,20 +23,6 @@
     finishBlock:(void(^)(void))finishBlock;
 
 /**
- *视频，音频与视频混合
- *@pargm sourceVideo 视频源文件路径
- *@pargm videoPath 要混合的视频文件路径
- *@pargm soundPath 要混合的音频文件路径
- *@pargm savePath 混合后的文件保存路径
- *@pargm finishBlock 混合完成后调用的block
- */
--(void)mixVideo:(NSString *)sourceVideo
-      videoPath:(NSString *)videoPath
-      soundPath:(NSString *)soundPath
-       savePath:(NSString *)savePath
-    finishBlock:(void(^)(void))finishBlock;
-
-/**
  *抽取视频帧渲染后输出
  *@pargm sourceVideo 视频源文件路径
  *@pargm filterName 滤镜名称
@@ -45,5 +31,17 @@
 -(void)extractImageFromVideo:(NSString *)sourceVideo
                   filterName:(NSString *)filterName
         finishFilterCallBack:(void(^)(void))block;
+
+/**
+ *给视频添加水印
+ *@pargm sourceVideo 视频源文件路径
+ *@pargm printImg 水印图片
+ *@pargm pringRect 水印位置
+ *@pargm finishFilterCallBack 水印添加完成调用块
+ */
+-(void)addWaterPrintToVideo:(NSString *)sourceVideo
+                   printImg:(UIImage *)printImg
+                  printRect:(CGRect)printRect
+  finishWataerPrintCallBack:(void(^)(NSString *))block;
 
 @end

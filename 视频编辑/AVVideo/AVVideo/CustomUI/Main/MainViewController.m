@@ -156,6 +156,7 @@
     
     /*开始添加删除按钮*/
     rect=CGRectMake(15, ScreenHeight-155, 53, 53);
+    NSLog(@"Rect's y:%f",rect.origin.y);
     img=[[UISDK Instance]getImg:@"General_ConcelBut_.png"];
     self.cancelRecordBut=[[UISDK Instance]addButton:rect
                                               title:nil

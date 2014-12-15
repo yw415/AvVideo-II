@@ -693,7 +693,7 @@
                   symbolName = "-[VideoProcessOperationView selectedItem:index:]"
                   moduleName = "AVVideo"
                   urlString = "file:///Users/user/AvVideo-II/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/AVVideo/AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
-                  timestampString = "437190609.366519"
+                  timestampString = "440250735.341063"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "245"
@@ -707,7 +707,7 @@
                   symbolName = "__48-[VideoProcessOperationView selectedItem:index:]_block_invoke141"
                   moduleName = "AVVideo"
                   urlString = "file:///Users/user/AvVideo-II/%E8%A7%86%E9%A2%91%E7%BC%96%E8%BE%91/AVVideo/AVVideo/CustomUI/Process/CustomView/VideoProcessOperationView.m"
-                  timestampString = "437190609.366944"
+                  timestampString = "440250735.341295"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "245"
@@ -778,6 +778,38 @@
             startingLineNumber = "264"
             endingLineNumber = "264"
             landmarkName = "-selectedItem:index:"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVVideo/CustomUI/Main/MainViewController.m"
+            timestampString = "440251795.884637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "140"
+            endingLineNumber = "140"
+            landmarkName = "-addSubviews"
+            landmarkType = "5">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "AVVideo/CustomUI/Main/MainViewController.m"
+            timestampString = "440251795.884637"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "141"
+            endingLineNumber = "141"
+            landmarkName = "-addSubviews"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>

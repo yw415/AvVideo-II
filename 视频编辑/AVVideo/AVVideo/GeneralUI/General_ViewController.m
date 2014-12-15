@@ -60,14 +60,14 @@
     //改变导航栏背景
     UIImage * navBackGround;
     navBackGround=[[UtilitySDK Instance]getImageFromColor:[UIColor blackColor]
-                                                     rect:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
+                                                     rect:CGRectMake(0, 0, ScreenWidth, 44)];
     [self.navigationController.navigationBar changeBackGround:navBackGround];
     [self.navigationController.navigationBar changeNavFont:[UIColor whiteColor]];
     /*结束导航栏基本配置*/
 
-    
+
     /*开始设置页面背景色*/
-    self.view.backgroundColor=[UIColor whiteColor];
+    self.view.backgroundColor=[UIColor blackColor];
     self.bgView=[[UIImageView alloc]initWithFrame:CGRectMake(0, 0, ScreenWidth, ScreenHeight-64)];
     [self.view addSubview:self.bgView];
     [self setBackGround];
@@ -92,13 +92,13 @@
 {
     UIImage * bgImg=[[UtilitySDK Instance]getImageFromColor:[UIColor blackColor]
                                                               rect:CGRectMake(0, 0, ScreenWidth, ScreenHeight)];
-//    switch (_viewName)
-//    {
-//        case View_Main:
-//        {
-//        }
-//            break;
-//    }
+    switch (_viewName)
+    {
+        case View_Main:
+        {
+        }
+            break;
+    }
     self.bgView.image=bgImg;
 }
 
